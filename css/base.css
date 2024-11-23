@@ -58,6 +58,8 @@ body {
 	font-family: "oculi-display", serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden; /* Prevents visible scrollbars */
+
 }
 
 /* Page Loader */
