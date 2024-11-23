@@ -58,8 +58,16 @@ body {
 	font-family: "oculi-display", serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden; /* Prevents visible scrollbars */
+	overflow: hidden; /* Prevents visible scrollbars on the viewport */
+}
 
+main {
+	overflow-y: scroll; /* Allow vertical scrolling */
+	scrollbar-width: none; /* Firefox: hide the scrollbar */
+}
+
+main::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Edge: hide the scrollbar */
 }
 
 /* Page Loader */
